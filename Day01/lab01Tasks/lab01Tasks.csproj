@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\female.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\female.jpg" />
+	  <Resource Include="Images\male.jpg" />
+  </ItemGroup>
+
+</Project>

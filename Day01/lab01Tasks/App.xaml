@@ -1,0 +1,18 @@
+﻿<Application x:Class="lab01Tasks.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:lab01Tasks"
+             xmlns:VM="clr-namespace:lab01Tasks.ViewModel"
+             xmlns:System="clr-namespace:System;assembly=mscorlib"
+             xmlns:enm="clr-namespace:lab01Tasks.Conventer"
+             StartupUri="View/HomeWindow.xaml">
+    <Application.Resources>
+        <VM:HomeVM x:Key="HomeVM"></VM:HomeVM>
+        <ObjectDataProvider x:Key="enumGender" MethodName="GetValues" ObjectType="{x:Type System:Enum}">
+            <ObjectDataProvider.MethodParameters>
+                <x:Type TypeName="enm:EnumClass+Gender"></x:Type>
+            </ObjectDataProvider.MethodParameters>
+        </ObjectDataProvider>
+
+    </Application.Resources>
+</Application>
