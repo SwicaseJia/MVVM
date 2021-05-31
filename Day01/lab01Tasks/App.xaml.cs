@@ -13,5 +13,6 @@ namespace lab01Tasks
     /// </summary>
     public partial class App : Application
     {
+        System.Console.WriteLine("Hi");
     }
 }
